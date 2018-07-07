@@ -1,0 +1,19 @@
+current directory: /Users/tornglinchen/Documents/rails_practice/blog/vendor/bundle/gems/byebug-10.0.2/ext/byebug
+/Users/tornglinchen/.rvm/rubies/ruby-2.3.3/bin/ruby -r ./siteconf20180707-16130-19vcd2g.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tornglinchen/Documents/rails_practice/blog/vendor/bundle/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/tornglinchen/Documents/rails_practice/blog/vendor/bundle/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR="
+compiling locker.c
+compiling byebug.c
+compiling context.c
+compiling breakpoint.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/tornglinchen/Documents/rails_practice/blog/vendor/bundle/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 byebug.bundle ./.gem.20180707-16130-rs492h/byebug
