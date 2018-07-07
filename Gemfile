@@ -60,3 +60,6 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "react_on_rails", "11.0.0" # Update to the current version
+gem "webpacker", "~> 3" # Newer versions might be supported

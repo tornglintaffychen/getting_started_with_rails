@@ -1,0 +1,5 @@
+current directory: /Users/tornglinchen/Documents/rails_practice/getting_started_with_rails/vendor/bundle/gems/rainbow-2.2.2/ext
+/Users/tornglinchen/.rvm/rubies/ruby-2.3.3/bin/ruby mkrf_conf.rb
+
+current directory: /Users/tornglinchen/Documents/rails_practice/getting_started_with_rails/vendor/bundle/gems/rainbow-2.2.2/ext
+/Users/tornglinchen/.rvm/rubies/ruby-2.3.3/bin/ruby -rubygems /Users/tornglinchen/Documents/rails_practice/getting_started_with_rails/vendor/bundle/gems/rake-12.3.1/exe/rake RUBYARCHDIR=/Users/tornglinchen/Documents/rails_practice/getting_started_with_rails/vendor/bundle/extensions/x86_64-darwin-17/2.3.0/rainbow-2.2.2 RUBYLIBDIR=/Users/tornglinchen/Documents/rails_practice/getting_started_with_rails/vendor/bundle/extensions/x86_64-darwin-17/2.3.0/rainbow-2.2.2
