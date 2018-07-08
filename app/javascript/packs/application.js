@@ -7,4 +7,14 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
+import ReactOnRails from 'react-on-rails'
+import HelloWorld from '../bundles/HelloWorld/components/HelloWorld'
+import Article from '../bundles/Article/components/Article'
+
+// This is how react_on_rails can see the Article in the browser.
+ReactOnRails.register({
+  HelloWorld,
+  Article
+})
+
 console.log('Hello World from Webpacker')
