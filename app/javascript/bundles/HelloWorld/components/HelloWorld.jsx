@@ -1,7 +1,8 @@
-import PropTypes from 'prop-types';
-import React from 'react';
+import PropTypes from 'prop-types'
+import React, { Component } from 'react'
+import styled from 'styled-components'
 
-export default class HelloWorld extends React.Component {
+export default class HelloWorld extends Component {
   static propTypes = {
     name: PropTypes.string.isRequired, // this is passed from the Rails view
   };
@@ -23,7 +24,7 @@ export default class HelloWorld extends React.Component {
 
   render() {
     return (
-      <div>
+      <Box>
         <h3>
           Hello, {this.state.name}!
         </h3>
@@ -39,7 +40,10 @@ export default class HelloWorld extends React.Component {
             onChange={(e) => this.updateName(e.target.value)}
           />
         </form>
-      </div>
+      </Box>
     );
   }
 }
+
+const Box = styled.div`
+`
