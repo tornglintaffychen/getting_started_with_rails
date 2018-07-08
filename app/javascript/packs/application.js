@@ -10,11 +10,13 @@
 import ReactOnRails from 'react-on-rails'
 import HelloWorld from '../bundles/HelloWorld/components/HelloWorld'
 import Article from '../bundles/Article/components/Article'
+import Link from '../components/atoms/Link/Link'
 
 // This is how react_on_rails can see the Article in the browser.
 ReactOnRails.register({
   HelloWorld,
-  Article
+  Article,
+  Link
 })
 
 console.log('Hello World from Webpacker')
