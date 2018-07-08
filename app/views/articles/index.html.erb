@@ -4,20 +4,23 @@
 
 <table>
   <% @articles.each do |article| %>
-    <%= react_component("Article", props: {
-      title: article.title,
-      text: article.text
+  <%= react_component("Article", props: {
+    title: article.title,
+    text: article.text
+    }, prerender: false) %>
+    <%= react_component("Link", props: {
+      text: 'Show',
+      linkTo: article_path(article)
       }, prerender: false) %>
-      <%= react_component("Link", props: {
-        text: 'Show',
-        linkTo: article_path(article)
-        }, prerender: false) %>
-      <%= react_component("Link", props: {
-        text: 'Edit',
-        linkTo: edit_article_path(article)
-        }, prerender: false) %>
-      <%= link_to 'Destroy', article_path(article),
-                method: :delete,
-                data: { confirm: 'Are you sure?' } %>
+    <%= react_component("Link", props: {
+      text: 'Edit',
+      linkTo: edit_article_path(article)
+      }, prerender: false) %>
+    <%= react_component("Link", props: {
+      text: 'Delete',
+      linkTo: article_path(article),
+      method: 'delete',
+      confirm: 'Are you sure?'
+      }, prerender: false) %>
   <% end %>
 </table>

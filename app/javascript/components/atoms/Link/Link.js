@@ -2,16 +2,20 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const propTypes = {
-  text: PropTypes.string
+  text: PropTypes.string,
+  linkTo: PropTypes.string,
+  method: PropTypes.string,
+  confirm: PropTypes.string
 }
 
 const Link = ({
   text,
   linkTo,
-  linkFunc
+  method,
+  confirm
 }) => {
   return (
-    <a href={linkFunc ? '' : linkTo} onClick={linkFunc}>
+    <a href={linkTo} data-method={method} data-confirm={confirm}>
       {text}
     </a>
   )
